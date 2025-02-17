@@ -6,6 +6,7 @@ import Stats from "../assets/stat.svg";
 import views from "../assets/views.svg";
 import { motion } from "framer-motion";
 import arrow from "../assets/arrow.svg"
+import { useNavigate } from 'react-router-dom';
 
 export default function Herosection() {
   const socialVariants = {
@@ -79,6 +80,14 @@ export default function Herosection() {
     },
   };
 
+
+  const navigate = useNavigate(); // React Router navigation hook
+
+  // Function to navigate to /booking page
+  const handleBookingClick = () => {
+    navigate("/booking");
+  };
+
   return (
     <div className="hero-section relative py-[9%] px-[1%] ">
       <div className=" absolute w-full top-14 right-3 lg:flex hidden items-end justify-end pr-[100px]">
@@ -107,10 +116,10 @@ export default function Herosection() {
         />
       </div>
 
-      <div className=" absolute w-[300px] bottom-60 right-20 -rotate-75  lg:flex hidden items-end justify-start pr-[100px]">
+      <div className=" absolute w-[300px] bottom-50 right-20 -rotate-75  lg:flex hidden items-end justify-start pr-[100px]">
         <motion.img src={arrow} alt="" variants={viewsVariants} initial="hidden" animate="visible" />
       </div>
-      <div className=" absolute w-full -bottom-11 right-8 lg:flex hidden items-end justify-end pr-[100px]">
+      <div className=" absolute w-full -bottom-19 right-8 lg:flex hidden items-end justify-end pr-[100px]">
         <motion.img src={Stats} alt="" variants={statsVariants} initial="hidden" animate="visible" />
       </div>
       <div className="hero-text lg:px-[14%]">
@@ -119,21 +128,30 @@ export default function Herosection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className='md:text-[50px] text-[35px] md:leading-[72px] text-center font-semibold uppercase lg:mt-2 mt-[60px]'>
-          We build AI Driven content engines for Entrepreneurs & VC
+          Tailored Short Form Videos for Online Coaches & Business Owners
         </motion.h1>
       </div>
+      <motion.p
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        className='mt-[15px] leading-6 opacity-70 md:px-[14%] text-[16px] text-center'>
+        Whether you're a relationship coach, fitness coach or a business owner, our expert team specializes in creating
+        content that inspire action and drive results to establish you as market leader in your niche.
+      </motion.p>
       
       <div className="w-full flex items-center justify-center mt-[30px]">
-        <a href="https://calendly.com/akshath007/30min" target="_blank" rel="noopener noreferrer">
+        
           <motion.button
+          onClick={handleBookingClick}
             initial={{ opacity: 0, y: 50, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-            className='py-2.5 px-7 rounded-md font-semibold bg-[#BC53F0] text-white'
+            className='py-2.5 px-7 rounded-md font-semibold bg-[#49AA3B] text-white'
           >
             Book a call
           </motion.button>
-          </a>
+         
     </div>
     </div>
   );

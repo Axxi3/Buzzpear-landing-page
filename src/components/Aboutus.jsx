@@ -39,7 +39,7 @@ export default function Aboutus() {
     <div id='about-us' className="About us mt-[150px] flex flex-col gap-[15px] items-center justify-center">
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
-        <div className="About us text uppercase text-[25px] text-[#BC53F0]">Introducing</div>
+        <div className="About us text uppercase text-[25px] text-[#49AA3B]">Introducing</div>
       </div>
       <div className=" lg:w-[80%] md:w-[100%] w-full">
         <p className='lg:text-[42px] text-[35px] tracking-tighter leading-[43px] text-center'>We help entrepreneurs and VCs expand their 
@@ -66,7 +66,7 @@ export default function Aboutus() {
           <div className="w-full  aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
-              src="https://fast.wistia.net/embed/iframe/9f4n4crjp1?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
+              src="https://fast.wistia.net/embed/iframe/558kmm117t?web_component=true&seo=true&videoFoam=true&autoPlay=true&muted=true"
               title="Best 3 Video"
               allow="autoplay; fullscreen"
               allowTransparency="true"

@@ -66,7 +66,7 @@ export default function Stats() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <AnimatedNumber from={6500} to={7000} duration={2} inView={inView} />
+          <AnimatedNumber from={5500} to={5783} duration={2} inView={inView} />
         </motion.h2>
         <motion.p
           className='lg:text-[26px] text-[22px]'
@@ -84,7 +84,7 @@ export default function Stats() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <AnimatedNumber from={30} to={45} duration={2} inView={inView} />
+          <AnimatedNumber from={406070000} to={406070524} duration={2} inView={inView} />
         </motion.h2>
         <motion.p
           className='lg:text-[26px] text-[22px]'
@@ -103,14 +103,14 @@ export default function Stats() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <AnimatedNumber from={10} to={25} duration={2.9} inView={inView} />
+          <AnimatedNumber from={113000} to={113564} duration={2.9} inView={inView} />
         </motion.h2>
         <motion.p
           className='lg:text-[26px] text-[22px] font-light'
           variants={textVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-        >Satisfied Clients</motion.p>
+        >views Generated</motion.p>
       </div>
     </div>
   );

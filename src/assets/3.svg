@@ -11,16 +11,16 @@
 <stop offset="1" stop-color="#C44900"/>
 </linearGradient>
 <linearGradient id="paint1_linear_2303_26" x1="48.1409" y1="0" x2="48.1409" y2="100" gradientUnits="userSpaceOnUse">
-<stop stop-color="#E98FFF"/>
-<stop offset="1" stop-color="#8508C3"/>
+<stop stop-color="#2EFB46"/>
+<stop offset="1" stop-color="#49AA3B"/>
 </linearGradient>
 <linearGradient id="paint2_linear_2303_26" x1="77.6239" y1="0.00390625" x2="77.6239" y2="37.3454" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFD2B8"/>
 <stop offset="1" stop-color="#C44900"/>
 </linearGradient>
 <linearGradient id="paint3_linear_2303_26" x1="77.6238" y1="0.00390625" x2="77.6238" y2="37.3454" gradientUnits="userSpaceOnUse">
-<stop stop-color="#E98FFF"/>
-<stop offset="1" stop-color="#8508C3"/>
+<stop stop-color="#2EFB46"/>
+<stop offset="1" stop-color="#49AA3B"/>
 </linearGradient>
 <clipPath id="clip0_2303_26">
 <rect width="97" height="100" fill="white"/>

@@ -27,7 +27,7 @@ export default function Problem() {
         {/* Section Title */}
         <div className="w-full flex items-center justify-center gap-2">
           <img src={bullet} alt="" />
-          <div className="text uppercase md:text-[25px] text-[18px] text-[#BC53F0]">How it works</div>
+          <div className="text uppercase md:text-[25px] text-[18px] text-[#49AA3B]">Why work with us?</div>
         </div>
 
         <div className="w-full">

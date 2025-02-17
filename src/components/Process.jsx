@@ -16,18 +16,18 @@ export default function Process() {
 
   const x = useTransform(scrollYProgress, [0, 1], ["43%", "-40%"]); //Adjust -65% according to the length of the content
 
-  const cards = [process1, process2, process3, process3, process3];
+ 
 
 
 
   return (
    
-    <div className="md:h-[650dvw] w-full md:mb-0 mb-[80px]"  id='process' ref={targetRef}> {/* Added ref here  And added a bg color to see the container*/}
+    <div className="md:h-[550dvw] w-full md:mb-0 mb-[80px]"  id='process' ref={targetRef}> {/* Added ref here  And added a bg color to see the container*/}
       <div className="w-full sticky top-7 md:h-screen mt-[180px] flex flex-col gap-[15px] justify-center ">
         {/* Section Title */}
         <div className="w-full flex items-center justify-center gap-2">
           <img src={bullet} alt="" />
-          <div className="text uppercase md:text-[25px] text-[18px] text-[#BC53F0]">How it works</div>
+          <div className="text uppercase md:text-[25px] text-[18px] text-[#49AA3B]">How it works</div>
         </div>
 
         <div className="w-full">
@@ -62,7 +62,7 @@ export default function Process() {
                 <p className="text-[16px] md:text-[18px] opacity-75">
                  {item.body}
                 </p>
-                <p className="text-[14px] md:text-[15px] rounded-4xl flex w-fit px-4 py-1 mt-5 text-black bg-[#BC53F0] mx-auto md:mx-0">
+                <p className="text-[14px] md:text-[15px] rounded-4xl flex w-fit px-4 py-1 mt-5 text-black bg-[#49AA3B] mx-auto md:mx-0">
                  {item.output}
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default function Process() {
         <p className="text-[16px] md:text-[18px] opacity-75">
         {item.body}
         </p>
-        <p className="text-[14px] md:text-[15px] rounded-4xl flex w-fit px-4 py-1 mt-5 text-black bg-[#BC53F0] mx-auto">
+        <p className="text-[14px] md:text-[15px] rounded-4xl flex w-fit px-4 py-1 mt-5 text-black bg-[#49AA3B] mx-auto">
           {item.output}
         </p>
       </div>

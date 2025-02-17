@@ -25,7 +25,7 @@ export default function Testimonials() {
   return (
     <>
       <motion.div
-        id='testimonial'
+        id='testimonials'
         className="relative About us flex flex-col gap-[15px] pb-[40px] items-center justify-center"
         ref={ref}
         variants={fadeInAnimation}
@@ -60,7 +60,7 @@ export default function Testimonials() {
                 />
                 <div className="flex flex-col justify-center items-center w-fit">
                   <h3 className="text-[20px] opacity-90">Sahil Kasana</h3>
-                  <p className="text-[18px] ">Relationship Coach</p>
+                 
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Testimonials() {
                 />
                 <div className="flex flex-col justify-center items-center w-fit">
                   <h3 className="text-[20px] opacity-90">Joy Anand</h3>
-                  <p className="text-[18px] ">Relationship Coach</p>
+                 
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Testimonials() {
                 />
                 <div className="flex flex-col justify-center items-center w-fit">
                   <h3 className="text-[20px] opacity-90">Kamilah Stevenson</h3>
-                  <p className="text-[18px] ">Relationship Coach</p>
+                 
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Testimonials() {
 
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white to-transparent"></div>
 
-       
+       <Stats/>
       </motion.div>
     </>
   );

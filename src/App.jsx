@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import overlay from "./assets/Overlay.svg";
 import logoA from "/logoA.png"
-
+import Home from "./components/HomePage";
 import Herosection from './components/Herosection';
 import Aboutus from './components/Aboutus';
 import Process from './components/Process';
@@ -13,6 +13,8 @@ import Bookacall from './components/Bookacall';
 import Problem from "./components/Problems";
 import cursor from "../public/cursor.svg"
 import Stats from "./components/Subcomponent/Stats";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import BookingPage from "./components/BookingPage";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -21,43 +23,14 @@ function App() {
   const slowScroll = useTransform(scrollYProgress, [0, 1], [0, 0.5]);
 
   return (
-    <motion.div style={{ cursor: `url(cursor.svg),auto`,y: slowScroll }} className="relative"
-    
-    >
-      {/* Background Overlay */}
-      <div className="absolute w-full flex items-center justify-center">
-        <img src={overlay} alt="" />
-      </div>
 
-      {/* Sticky Navbar */}
-      <div className="sticky w-full z-99">
-        <Navbar />
-      </div>
-
-      {/* Sections */}
-      <Herosection />
-      <Aboutus />
-      <Process />
-      {/* <Testimonials /> */}
-      <Stats/>
-      <Problem/>
-      <FAQs />
-      <Bookacall />
-
-      {/* Footer */}
-      <div className="flex flex-col gap-5 w-full items-center justify-center p-10">
-        <img
-          src={logoA}
-          className="rounded-[100px] w-[100px] h-[100px]"
-          alt="Profile"
-        />
-        <h1 className="text-[20px]">Connect with us</h1>
-        <ul className="flex gap-5">
-          <li className="text-[18px] opacity-75">Instagram</li>
-          <li className="text-[18px] opacity-75">Linkedin</li>
-        </ul>
-      </div>
-    </motion.div>
+   
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/booking" element={<BookingPage />} />
+    </Routes>
+  </Router>
   );
 }
 
