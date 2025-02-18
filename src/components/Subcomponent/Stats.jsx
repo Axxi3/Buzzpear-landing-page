@@ -84,7 +84,7 @@ export default function Stats() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <AnimatedNumber from={406070000} to={406070524} duration={2} inView={inView} />
+          <AnimatedNumber from={300} to={350} duration={2} inView={inView} />
         </motion.h2>
         <motion.p
           className='lg:text-[26px] text-[22px]'
@@ -103,14 +103,14 @@ export default function Stats() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <AnimatedNumber from={3408000} to={3500000} duration={2.9} inView={inView} />
+          <AnimatedNumber from={363157} to={364157} duration={2.9} inView={inView} />
         </motion.h2>
         <motion.p
           className='lg:text-[26px] text-[22px] font-light'
           variants={textVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-        >views Generated</motion.p>
+        >Total view Count (hrs)</motion.p>
       </div>
     </div>
   );

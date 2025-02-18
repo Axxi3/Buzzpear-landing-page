@@ -1,17 +1,11 @@
 <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_2302_15)">
-<path d="M15.892 27.5251L11.334 11.5331C11.098 10.7081 11.956 9.99505 12.736 10.3681L27.838 17.5931C28.642 17.9771 28.581 19.1301 27.742 19.4271L21.531 21.6281C21.306 21.7071 21.116 21.8651 20.998 22.0711L17.732 27.7501C17.291 28.5171 16.135 28.3751 15.892 27.5251Z" fill="#C858FF"/>
-<path d="M10.85 11.6681L15.409 27.6601C15.773 28.9351 17.507 29.1471 18.168 27.9971L21.434 22.3181C21.493 22.2151 21.588 22.1361 21.701 22.0961L27.912 19.8951C29.17 19.4501 29.261 17.7211 28.056 17.1451L12.954 9.92006C11.784 9.36006 10.497 10.4301 10.85 11.6681Z" stroke="#C858FF" stroke-miterlimit="10"/>
-</g>
-<defs>
-<filter id="filter0_d_2302_15" x="0.289185" y="0.266968" width="37.1206" height="37.9827" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dx="-1"/>
-<feGaussianBlur stdDeviation="4.5"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.784314 0 0 0 0 0.345098 0 0 0 0 1 0 0 0 0.99 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2302_15"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2302_15" result="shape"/>
-</filter>
-</defs>
+  <g filter="url(#mega-glow)">
+    <path d="M15.892 27.5251L11.334 11.5331C11.098 10.7081 11.956 9.99505 12.736 10.3681L27.838 17.5931C28.642 17.9771 28.581 19.1301 27.742 19.4271L21.531 21.6281C21.306 21.7071 21.116 21.8651 20.998 22.0711L17.732 27.7501C17.291 28.5171 16.135 28.3751 15.892 27.5251Z" fill="#3ECC40"/>
+    <path d="M10.85 11.6681L15.409 27.6601C15.773 28.9351 17.507 29.1471 18.168 27.9971L21.434 22.3181C21.493 22.2151 21.588 22.1361 21.701 22.0961L27.912 19.8951C29.17 19.4501 29.261 17.7211 28.056 17.1451L12.954 9.92006C11.784 9.36006 10.497 10.4301 10.85 11.6681Z" 
+          stroke="#3ECC40" stroke-width="1.5" stroke-miterlimit="10"/>
+  </g>
+  <defs>
+  
+
+  </defs>
 </svg>

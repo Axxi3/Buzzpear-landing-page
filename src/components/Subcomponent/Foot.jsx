@@ -1,60 +1,54 @@
 import React from 'react';
+import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 export default function Foot() {
   return (
-    <footer className="bg-white dark:bg-[#0d0b0d] ">
+    <footer className="bg-black text-white">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-9 lg:py-8">
         <div className="md:flex md:justify-between pt-4">
+          {/* Logo & Address */}
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center rounded-[99px]">
               <img src="/logoB.png" className="h-8 me-3 rounded-[99px]" alt="BuzzPear Logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BuzzPear</span>
+              <span className="self-center text-2xl font-semibold whitespace-nowrap">Buzzpear</span>
+            </a>
+            <p className="mt-4 text-sm text-gray-400">
+              Professor Colony, Street No. 2 <br />
+              Sirhind-Fategarh, Punjab 140406 <br />
+              India
+            </p>
+            <p className="mt-2 text-sm text-gray-400">
+              Email: <a href="mailto:Shourya@buzzspear.com" className="hover:underline">Shourya@buzzspear.com</a>
+            </p>
+          </div>
+
+          {/* Social Media Icons */}
+          <div className="flex space-x-6 text-gray-400">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaTwitter size={20} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaLinkedin size={20} />
+            </a>
+            <a href="https://www.instagram.com/buzzspear?igsh=MXUyNXBpcWN6eHJ6cA==" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaInstagram size={20} />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">Blog</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">Support</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow Us</h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">Twitter</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <a href="#" className="hover:underline">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">Terms & Conditions</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#" className="hover:underline">BuzzPear</a>. All Rights Reserved.</span>
-          <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">Twitter</a>
-            <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">LinkedIn</a>
-            <a href="https://www.instagram.com/buzzspear?igsh=MXUyNXBpcWN6eHJ6cA==" className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">Instagram</a>
+
+        <hr className="my-6 border-gray-700 sm:mx-auto lg:my-8" />
+
+        {/* Footer Bottom Section */}
+        <div className="sm:flex sm:items-center sm:justify-between text-gray-400 text-sm text-center">
+          <span>© 2025 Buzzpear. All Rights Reserved.</span>
+          <div className="flex space-x-6 justify-center sm:justify-start mt-4 sm:mt-0">
+            <a href="#" className="hover:text-white">Privacy Policy</a>
+            <a href="#" className="hover:text-white">Terms of Service</a>
+            <a href="#" className="hover:text-white">Refund Policy</a>
           </div>
+          <span className="mt-4 sm:mt-0">
+            Made with <span className="text-red-500">❤️</span> by <span className="text-yellow-400">Anurag</span>
+          </span>
         </div>
       </div>
     </footer>

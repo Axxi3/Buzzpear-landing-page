@@ -6,17 +6,17 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex px-[50px] items-center justify-between py-5 relative z-50 bg-transparent">
+    <nav className="flex px-[80px] items-center justify-between py-10 relative z-50 bg-transparent">
       {/* LOGO */}
       <div className="LOGO">
         <h2 className="text-[26px] font-bold">
-          Buzz<span className="text-[#49AA3B]">Pear</span>
+          Buzz<span className="text-[#49AA3B]">pear</span>
         </h2>
       </div>
 
       {/* Desktop Navigation */}
-      <ul className="hidden lg:flex items-center gap-10 bg-[#1a1a1a] py-3 px-8 rounded-full absolute left-1/2 transform -translate-x-1/2">
-        {["Process", "Testimonials", "About Us", "Problems", "FAQs","Get in Touch"].map(
+      <ul className="hidden lg:flex items-center gap-10 bg-[#1a1a1a] py-4 px-8 rounded-full absolute left-1/2 transform -translate-x-1/2">
+        {["Process", "Testimonials",  "Features", "FAQs","Get in Touch"].map(
           (item, index) => (
             <li key={index}>
               <a
@@ -57,7 +57,7 @@ export default function Navbar() {
             </button>
 
             {/* Navigation Links */}
-            {["Process", "Testimonials", "About Us", "Problems", "FAQs","Get in Touch"].map(
+            {["Process", "Testimonials",  "Features", "FAQs","Get in Touch"].map(
               (item, index) => (
                 <a
                   key={index}

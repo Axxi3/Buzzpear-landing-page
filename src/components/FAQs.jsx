@@ -57,41 +57,45 @@ export default function FAQs() {
       </div>
 
       {/* FAQ List */}
-      <div className="flex flex-col gap-5 md:mt-[60px] mt-[20px] lg:px-[13%]">
+      <div className="flex flex-col gap-5 md:mt-[60px] mt-[20px] px-[5%]  lg:px-[13%]">
         {faqs.map((faq, index) => (
-          <motion.div
-            key={index}
-            className={`FAQs__item p-6 rounded-xl cursor-pointer transition-colors duration-300 ${
-              openIndex === index ? "bg-[#292929]" : ""
-            }`}
-            onClick={() => toggleFAQ(index)}
-            whileHover={{ scale: 1.02 }} // Small hover effect
-          >
-            {/* Question */}
-            <div className="flex items-center justify-between w-full">
-              <h4 className="md:text-[20px] text-[16px] opacity-90">{faq.question}</h4>
-              <motion.img
-                src={chevron}
-                className="w-[28px] h-[28px]"
-                alt=""
-                animate={{ rotate: openIndex === index ? 180 : 0 }}
-                transition={{ duration: 0.3 }}
-              />
-            </div>
-
-            {/* Answer (Expanding & Collapsing) */}
-            <motion.div
-              initial={false}
-              animate={{
-                height: openIndex === index ? "auto" : 0,
-                opacity: openIndex === index ? 1 : 0,
-              }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="overflow-hidden mt-3"
-            >
-              <p className="md:text-[18px] text-[15px] opacity-75">{faq.answer}</p>
-            </motion.div>
-          </motion.div>
+        <motion.div
+        key={index}
+        className={`FAQs__item p-6 rounded-xl lg:w-[800px] cursor-pointer transition-colors duration-300 ${
+          openIndex === index ? "bg-[#292929]" : ""
+        }`}
+        onClick={() => toggleFAQ(index)}
+        
+      >
+        {/* Question */}
+        <div className="flex items-center justify-between w-full">
+          <h4 className="md:text-[20px] text-[16px] opacity-90">{faq.question}</h4>
+          <motion.img
+            src={chevron}
+            className="w-[28px] h-[28px]"
+            alt=""
+            animate={{ rotate: openIndex === index ? 180 : 0 }}
+            transition={{ duration: 0.3 }}
+          />
+        </div>
+      
+        {/* Answer (Expanding & Collapsing) */}
+        <motion.div
+          initial={false}
+          animate={{
+            height: openIndex === index ? "auto" : 0,
+            opacity: openIndex === index ? 1 : 0,
+          }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className={`overflow-hidden mt-3 ${
+            openIndex === index ? "pointer-events-auto" : "pointer-events-none"
+          }`}
+        >
+          <p className="md:text-[18px] text-[15px] opacity-75">{faq.answer}</p>
+        </motion.div>
+      </motion.div>
+      
+        
         ))}
       </div>
     </div>

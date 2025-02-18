@@ -43,7 +43,7 @@ export default function Aboutus() {
         <div className="About us text uppercase text-[25px] text-[#49AA3B]">Introducing</div>
       </div>
       <div className=" lg:w-[80%] md:w-[100%] w-full">
-        <p className='lg:text-[42px] text-[35px] tracking-tighter leading-[43px] text-center'>We help entrepreneurs and VCs expand their 
+        <p className='lg:text-[42px] text-[35px] tracking-tighter leading-[43px] text-center px-3'>We help entrepreneurs and VCs expand their 
           reach with our AI-powered content engine—building trust, attracting high-quality leads, and positioning 
           them as the go-to authority in their industry on autopilot.</p>
       </div>
@@ -63,7 +63,7 @@ export default function Aboutus() {
             backgroundPosition: 'center',
           }}></div>
 
-<motion.div className="w-full md:w-[23%]" style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
+<motion.div className="w-[60%] md:w-[23%]" style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
 
           <div className="w-full  aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
@@ -80,7 +80,7 @@ export default function Aboutus() {
           </div>
         </motion.div>
 
-        <motion.div className="w-full md:w-[23%]" style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
+        <motion.div className="w-[60%] md:w-[23%]" style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
@@ -96,7 +96,7 @@ export default function Aboutus() {
           </div>
         </motion.div>
 
-        <motion.div className="w-full md:w-[23%]" style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
+        <motion.div className="w-[60%] md:w-[23%]" style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
@@ -112,7 +112,7 @@ export default function Aboutus() {
           </div>
         </motion.div>
 
-        <motion.div className="w-full md:w-[23%]" style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
+        <motion.div className="w-[60%] md:w-[23%]" style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe

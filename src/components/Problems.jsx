@@ -21,7 +21,7 @@ export default function Problem() {
   const fadeIn = useTransform(scrollYProgress, [0, 1], [0, 1]); // Fades in smoothly
 
   return (
-    <div id="problems" className="w-full md:mb-0 mb-[80px]"  ref={targetRef}>
+    <div id="features" className="w-full md:mb-0 mb-[80px] px-10"  ref={targetRef}>
       <div className="w-full sticky top-7 mt-[180px] flex flex-col gap-[15px] justify-center">
 
         {/* Section Title */}
@@ -91,8 +91,17 @@ export default function Problem() {
         </div>
 
         {/* Tags Section */}
-        <div className="w-full px-[20%] items-center justify-center mt-[30px] hidden lg:flex gap-10 flex-wrap">
-          <Tags name={"Quick Revisions"} /><Tags name={"24*7 support"} /><Tags name={"Flexible Timing"} /><Tags name={"Trend Report"} /><Tags name={"Growth Analysis"} />
+        <div className="w-full px-[20%] flex-col  items-center justify-center mt-[30px] hidden lg:flex gap-10">
+          <div className="w-full items-center justify-center flex gap-10">
+            <Tags name={"Quick Revisions"} />
+            <Tags name={"24*7 support"} />
+            <Tags name={"Flexible Timing"} />
+            </div>
+            <div className="w-full items-center justify-center flex gap-10">
+            <Tags name={"Trend Report"} />
+            <Tags name={"Growth Analysis"} />
+            </div>
+        
         </div>
 
       </div>
