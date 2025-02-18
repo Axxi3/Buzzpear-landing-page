@@ -103,7 +103,7 @@ export default function Stats() {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <AnimatedNumber from={113000} to={113564} duration={2.9} inView={inView} />
+          <AnimatedNumber from={3408000} to={3500000} duration={2.9} inView={inView} />
         </motion.h2>
         <motion.p
           className='lg:text-[26px] text-[22px] font-light'

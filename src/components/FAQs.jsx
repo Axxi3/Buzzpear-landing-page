@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import bullet from "../assets/bullet.svg";
 import chevron from "../assets/chevron.svg";
+import overlay from "../assets/Over.svg"; 
 
 const faqs = [
   {
@@ -35,7 +36,13 @@ export default function FAQs() {
   };
 
   return (
-    <div id="faqs" className="FAQs mt-[90px] flex flex-col gap-[15px] items-center justify-center">
+    <div id="faqs" className="FAQs relative mt-[90px] flex flex-col gap-[15px] items-center justify-center">
+
+
+         <div className="absolute top-0 h-full opacity-30 w-full flex items-center justify-center">
+              <img src={overlay} alt="Overlay Background" />
+            </div>
+      
       {/* Section Heading */}
       <div className="w-full flex items-center justify-center gap-2">
         <img src={bullet} alt="" />
@@ -44,13 +51,13 @@ export default function FAQs() {
         </div>
       </div>
       <div className="lg:w-[35%] w-[60%]">
-        <p className="text-[42px] tracking-tighter leading-[43px] text-center">
+        <p className="lg:text-[42px] md:text-[35px] text-[29px] tracking-tighter leading-[43px] text-center">
           Have More Questions?
         </p>
       </div>
 
       {/* FAQ List */}
-      <div className="flex flex-col gap-5 mt-[60px] lg:px-[13%]">
+      <div className="flex flex-col gap-5 md:mt-[60px] mt-[20px] lg:px-[13%]">
         {faqs.map((faq, index) => (
           <motion.div
             key={index}
@@ -62,7 +69,7 @@ export default function FAQs() {
           >
             {/* Question */}
             <div className="flex items-center justify-between w-full">
-              <h4 className="text-[20px] opacity-90">{faq.question}</h4>
+              <h4 className="md:text-[20px] text-[16px] opacity-90">{faq.question}</h4>
               <motion.img
                 src={chevron}
                 className="w-[28px] h-[28px]"
@@ -82,7 +89,7 @@ export default function FAQs() {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="overflow-hidden mt-3"
             >
-              <p className="text-[18px] opacity-75">{faq.answer}</p>
+              <p className="md:text-[18px] text-[15px] opacity-75">{faq.answer}</p>
             </motion.div>
           </motion.div>
         ))}

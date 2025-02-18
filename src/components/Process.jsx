@@ -40,12 +40,12 @@ export default function Process() {
         <div className="w-full   md:flex hidden justify-center mt-10 scrollbar-hide overflow-hidden "> {/* Removed top-0, Added overflow-hidden */}
           <motion.div
             style={{ x }}
-            className="flex gap-5 px-5 scrollbar-hide"
+            className="flex gap-5 md:px-5 px-0 scrollbar-hide"
           >
             {processSteps.map((item, index) => (
               <div
               key={index}
-              className="w-[100vw] flex flex-col md:flex-row items-center justify-center px-6 py-9 rounded-xl"
+              className="w-[100vw] flex flex-col md:flex-row items-center justify-center md:px-6  py-9 rounded-xl"
             >
               <div className="rounded-3xl flex items-center justify-center w-[200px] h-[200px] md:w-[250px] md:h-[250px] bg-[#000]">
                 <img
@@ -59,7 +59,7 @@ export default function Process() {
                 <h3 className="text-[22px] md:text-[26px] tracking-tight">
                  {item.tag}
                 </h3>
-                <p className="text-[16px] md:text-[18px] opacity-75">
+                <p className="text-[14px] md:text-[18px] opacity-75">
                  {item.body}
                 </p>
                 <p className="text-[14px] md:text-[15px] rounded-4xl flex w-fit px-4 py-1 mt-5 text-black bg-[#49AA3B] mx-auto md:mx-0">

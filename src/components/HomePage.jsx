@@ -12,6 +12,7 @@ import FAQs from "../components/FAQs";
 import Bookacall from "../components/Bookacall";
 import Problem from "../components/Problems";
 import { useNavigate } from "react-router-dom";
+import Foot from "./Subcomponent/Foot";
 
 function Home() {
   const { scrollYProgress } = useScroll();
@@ -26,21 +27,19 @@ function Home() {
   const slowScroll = useTransform(scrollYProgress, [0, 1], [0, 0.5]);
 
   return (
+    <>
     <motion.div style={{ cursor: `url(cursor.svg),auto`,y: slowScroll }} className="relative"
     
     >
       {/* Background Overlay */}
       <div className="absolute w-full flex items-center justify-center">
         <img src={overlay} alt="" />
-      </div>
-
-      {/* Sticky Navbar */}
-      <div className="sticky w-full z-99">
+        </div>
+        {/* Navbar */}
         <Navbar />
-      </div>
-
-      {/* Sections */}
-      <Herosection />
+        {/* Hero Section */}
+        <Herosection />
+        {/* About Us Section */}
       <Aboutus />
       <Process />
       <Testimonials />
@@ -48,9 +47,10 @@ function Home() {
       <Problem/>
       <FAQs />
       <Bookacall />
+    
 
       {/* Footer */}
-      <div className="flex flex-col gap-5 w-full items-center justify-center p-10">
+      {/* <div className="flex flex-col gap-5 w-full items-center justify-center p-10">
         <img
           src={logoB}
           className="rounded-[100px] w-[100px] h-[100px]"
@@ -61,8 +61,10 @@ function Home() {
           <li className="text-[18px] opacity-75">Instagram</li>
           <li className="text-[18px] opacity-75">Linkedin</li>
         </ul>
-      </div>
+      </div> */}
     </motion.div>
+    <Foot/>
+    </>
   );
 }
 

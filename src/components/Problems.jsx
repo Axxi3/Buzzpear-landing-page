@@ -21,7 +21,7 @@ export default function Problem() {
   const fadeIn = useTransform(scrollYProgress, [0, 1], [0, 1]); // Fades in smoothly
 
   return (
-    <div className="w-full md:mb-0 mb-[80px]" id='process' ref={targetRef}>
+    <div id="problems" className="w-full md:mb-0 mb-[80px]"  ref={targetRef}>
       <div className="w-full sticky top-7 mt-[180px] flex flex-col gap-[15px] justify-center">
 
         {/* Section Title */}
@@ -41,7 +41,7 @@ export default function Problem() {
 
           {/* First Card - Moves left to center */}
           <motion.div
-            className='flex flex-col gap-8 bg-[#1C1C1C] rounded-2xl lg:w-[25%] w-[80%] p-[29px]'
+            className='flex flex-col gap-8 bg-[#1C1C1C] rounded-2xl lg:w-[25%] w-[100%] p-[29px]'
             style={{ x: leftCardX, opacity: fadeIn }}
             transition={{ ease: "easeInOut", duration: 1.5 }} 
           >
@@ -56,7 +56,7 @@ export default function Problem() {
 
           {/* Second Card - Moves up to center */}
           <motion.div
-            className='flex flex-col gap-8 bg-[#1C1C1C] w-[80%] rounded-2xl lg:w-[25%] p-[29px]'
+            className='flex flex-col gap-8 bg-[#1C1C1C] w-[100%] rounded-2xl lg:w-[25%] p-[29px]'
             style={{ y: bottomCardY, opacity: fadeIn }}
             transition={{ ease: "easeInOut", duration: 1.5 }} 
           >
@@ -71,7 +71,7 @@ export default function Problem() {
 
           {/* Third Card - Moves right to center */}
           <motion.div
-  className='flex flex-col gap-8 bg-[#1C1C1C] w-[80%] lg:w-[25%] rounded-2xl p-[29px]'
+  className='flex flex-col gap-8 bg-[#1C1C1C] w-[100%] lg:w-[25%] rounded-2xl p-[29px]'
   style={{ x: rightCardX, opacity: fadeIn }}
   transition={{ ease: "easeInOut", duration: 1.5 }} 
 >

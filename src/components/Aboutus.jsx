@@ -7,8 +7,8 @@ export default function Aboutus() {
   const { scrollYProgress } = useScroll();
 
   // Adjusted values for faster animation, greater distance and smoother transition
-  const leftVideosX = useTransform(scrollYProgress, [0, 0.049], [-400, 0]);
-  const rightVideosX = useTransform(scrollYProgress, [0, 0.049], [400, 0]);
+  const leftVideosX = useTransform(scrollYProgress, [0, 0.074], [-400, 0]);
+  const rightVideosX = useTransform(scrollYProgress, [0, 0.074], [400, 0]);
   const tilt = useTransform(scrollYProgress, [0, 0.049], [5, 0]);
     const fadeIn = useTransform(scrollYProgress, [0, 0.049], [0, 1]); //Fade-in effect
 
@@ -18,17 +18,18 @@ export default function Aboutus() {
       padding: "0.75rem",
       backgroundColor: "#1a1a1a",
       width: "100%", // Default: full-width
-      maxWidth: "300px",
+      
     };
     
     // Adjust width for larger screens
     const responsiveVideoStyle = (isMobile) => ({
       ...videoCardStyle,
       width: isMobile ? "100%" : "45%", // 100% on mobile, 45% on larger screens
+      maxWidth:isMobile? "300px":""
     });
     
     const motionDivStyle = (xValue, tiltValue, fadeValue, isMobile) => ({
-      ...responsiveVideoStyle(isMobile),
+  
       x: scrollYProgress.get() > 0.09 ? 0 : xValue, // Freeze x after 0.09
       rotateY: tiltValue,
       opacity: fadeValue, // Apply fade-in
@@ -62,7 +63,8 @@ export default function Aboutus() {
             backgroundPosition: 'center',
           }}></div>
 
-        <motion.div className='w-full' style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
+<motion.div className="w-full md:w-[23%]" style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
+
           <div className="w-full  aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
@@ -78,7 +80,7 @@ export default function Aboutus() {
           </div>
         </motion.div>
 
-        <motion.div style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
+        <motion.div className="w-full md:w-[23%]" style={motionDivStyle(leftVideosX, tilt, fadeIn)}>
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
@@ -94,7 +96,7 @@ export default function Aboutus() {
           </div>
         </motion.div>
 
-        <motion.div style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
+        <motion.div className="w-full md:w-[23%]" style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
@@ -110,7 +112,7 @@ export default function Aboutus() {
           </div>
         </motion.div>
 
-        <motion.div style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
+        <motion.div className="w-full md:w-[23%]" style={motionDivStyle(rightVideosX, tilt, fadeIn)}>
           <div className="w-full aspect-[9/16] relative">
             <script src="https://fast.wistia.net/player.js" async></script>
             <iframe
